@@ -1,0 +1,67 @@
+body {
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+table {
+    width: auto;
+    margin: auto;
+    text-align: left;
+}
+
+
+.form-action--button{
+    text-align: right;
+}
+
+
+input[type="text"],
+input[type="number"] {
+    width: auto;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid rgb(165, 161, 161);
+    border-radius: 10px;
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background: #eee;
+    padding: 15px 20px;
+    margin:15px 0 10px; 
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    background: lime;
+
+}
+
+input[type="reset"]:hover {
+    background: red;
+}
+
+button {
+    background: #eee;
+    padding: 19px, 12px;
+    margin: 15px 0 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+  
+}
+
+ button:hover {
+    background: lightseagreen;
+}
+.result td{
+    padding: 10px;
+    border: 2px solid black;
+}
+

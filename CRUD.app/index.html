@@ -1,25 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index Page</title>
+    <title>CRUD APPLICATION</title>
+    <link href="index.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 </head>
-<body>
-    <br>
-    <marquee style="font-size: larger; font-family: Josefin sans-serif; ">Welcome To YourWebsite/Create your Data/Update your Data/Read Your Data</marquee>
-   <div style="display:inline-block; list-style: none;">
-    <nav>
-        <h2 class="logo">YourWebsite</h2>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="About.html">About</a></li>
-            <li><a href="Contact.html">Contact</a></li>
-            <li><a href="Register page.html">Sign Out</a></li> 
-        </ul>
-    </nav>
-    </div>
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD APPLICATION</title>
+    <link href="index.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <table>
+        <form autocomplete="off" onsubmit="onFormSubmit()">
+            <tr>
+                <td>
+                    <label for="ProductCode">Product Code</label>
+                </td>
+                <td>
+                    <input type="text" name="productcode" id="productcode" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ProductName">ProductName</label>
+                </td>
+                <td>
+                    <input type="text" name="Productname" id="productname" required>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <label for="Product Name">Quantity</label>
+                </td>
+                <td>
+                    <input type="number" name="Quantity" id="quantity" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Price">price</label>
+                </td>
+                <td>
+                    <input type="number" name="Price" id="price" required>
+                </td>
+            </tr>
+            <tr class="form-action--button">
+                <td><input type="submit" value="Submit"></td>
+                <td><input type="reset" value="Reset"></td>
+            </tr>
+        </form>
+        <br>
+        <br>
+        <td><tr>
+          
+            <table  id="list">
+                <hr>
+                    <br>
+                    <tr class="result">
+                    <td>Productcode</td>
+                    <td>Productname</td>
+                    <td>Quantity</td>
+                    <td>Price</td>
+                    </tr>
+                    <tbody>
+                    <script type="text/javascript" rel="javascript" src="index.js"></script>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+    </table>
 </body>
 </html>
